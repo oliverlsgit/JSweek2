@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSY1018 JavaScript</title>
+
+<!-- add materialize and css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- 🔥🔥🔥🔥🔥🔥 start the lecture here javascript 🔥🔥🔥🔥🔥🔥 -->
+<script>
+//examples in slides
+// #1
+let myBoolean = true;
+let myNumber = 5;
+let mySecondNumber = 5.0;
+let myString = "peanuts and m&m's";
+//numeric index of s - 6 & 16 - starts at 0
+
+// #2
+let a = 5;
+b = 10;
+//b was not defined - not okay
+
+// #3
+let a = 5;
+a = 7;
+//a has already been defined - this is okay
+
+// #4
+var b = 5;
+b = 10;
+//it will work but var is outdated and insecure - this is not okay
+
+// #5
+let myString = "gummy bears";
+myString = null;
+
+// #6
+let unassignedVariable;
+//unassignedVariable === undefined
+
+</script>
+<!-- 🔥🔥🔥🔥🔥🔥 start part 2 - lecture here javascript 🔥🔥🔥🔥🔥🔥 -->
+<script>
+
+    let a   = 10;
+    let b   = 3;
+    let c   = 15;
+    const d = '5';
+    let e   = 'my name';
+    const f = 'is dougLAS';
+
+    console.group('Addition');
+    console.log(a + b); //13
+    console.log(a + d); //105
+    console.log(e + ' ' + f); //my name is dougLAS
+    console.log(e += ' is the batman'); //my name is the batman
+    console.groupEnd();
+
+    console.group('Multiplication');
+    console.log(a * 3); //30
+    console.log(a * b); //30
+    console.log(b * c); //45
+    console.groupEnd();
+
+    a++;
+    b--;
+    --b;
+    c += a;
+    console.group('Incrementing');
+    console.log(a); //11
+    console.log(b); //1
+    console.log(c); //26
+    console.groupEnd();  
+</script>
+</body>
+</html>
